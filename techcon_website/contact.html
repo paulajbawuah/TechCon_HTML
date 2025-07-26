@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <a href="home.html">
+                    <li>
+                        Home
+                    </li>
+                </a>
+                <a href="about.html">
+                    <li>
+                        About
+                    </li>
+                </a>
+                <a href="schedule.html">
+                    <li>
+                        Schedule
+                    </li>
+                </a>
+                <a href="register.html">
+                    <li>
+                        Register
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+  <!-- Contact Information -->
+  <section>
+    <h2>Contact Information</h2>
+    
+    <p>Email us at: 
+      <a href="mailto:email@example.com">email@example.com</a>
+    </p>
+
+    <p>Follow us on social media:</p>
+    <ul>
+      <li><a href="https://facebook.com/TechConOfficial" target="_blank">Facebook</a></li>
+      <li><a href="https://twitter.com/TechConOfficial" target="_blank">Twitter (X)</a></li>
+      <li><a href="https://instagram.com/TechConOfficial" target="_blank">Instagram</a></li>
+      <!-- Replace the URLs above with real ones -->
+    </ul>
+  </section>
+
+  <!-- Embedded Google Map -->
+  <section>
+    <h2>Our Venue Location</h2>
+    <div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!..." 
+        width="100%" 
+        height="100%" 
+        style="position:absolute; top:0; left:0; border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Us Form -->
+  <section>
+    <h2>Contact Us</h2>
+    <form action="/send-message" method="POST">
+      
+      <label for="contact-name">Name:</label>
+      <input type="text" id="contact-name" name="contact-name" required>
+
+      <label for="contact-email">Email:</label>
+      <input type="email" id="contact-email" name="contact-email" required>
+
+      <label for="contact-message">Message:</label>
+      <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+  </section>
+    
+</body>
+</html>
